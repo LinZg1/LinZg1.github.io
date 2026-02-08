@@ -26,6 +26,19 @@ h1 {
     background-attachment: fixed;
 }
 
+.parallax-2 {
+    background: url('IMG_5894.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-3 {
+    background: url('IMG_5895.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 .parallax-inner {
     padding: 10% 0;
 }
