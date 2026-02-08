@@ -1,195 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
-body {
-    min-height: 100vh;
-    overflow-x: hidden;
-    background: linear-gradient(#00093c,#79adb6);
+body{
+
+    background: aliceblue ;  
 }
 
-section
-{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-section::before
-{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top,#4E6A94, transparent);
-    z-index: 1000;
+
+h1 {
+    font-size: 120px;
+    text-align: center;
+    color: rgba(225,225,225,.5);
 }
 
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute; /* Makes it float on top of other elements */
-    top: 30%; /* Center it vertically */
-    left: 50%; /* Center it horizontally */
-    transform: translate(-50%, -50%); /* Align perfectly to the center */
-    z-index: 100; /* Ensure it's on top of other elements */
-    width: 100%; /* Ensure it spans the whole width, if necessary */
+.parallax-1 {
+    background: url('IMG_5892.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.wrapper .first-text
-{
-    font-size: 60px;
-    color: #ffffff;
+.parallax-2 {
+    background: url('IMG_5893.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.wrapper .sec-text
-{
-    height: 90px;
-    line-height: 90px;
-    overflow: hidden;
-}
-.sec-text li 
-{
-    position: relative;
-    top: 0;
-    font-size: 60px;
-    color: #0ef;
-    list-style: none;
-    padding: 0 20px;
-    text-shadow: 0 0 10px #0ef;
-    animation: slide 12s steps(4) infinite, colorful 7s infinite;
+.parallax-inner {
+    padding: 10% 0;
 }
 
-@keyframes slide
-{
-    100% {
-        top: -360px;
-    }
+h2 {
+    font-size: 32px;
+    color: rgb(63, 63, 63);
+    text-align: center;
+    font-weight: 300;   
+    letter-spacing: 2px; 
+    margin: 20px 0 10px;
 }
 
-@keyframes colorful
-{
-    100% {
-        filter: hue-rotate(360deg);
-    }
+p {
+    font-size: 16px;
+    color: #555;
+    text-align: justify;
+    line-height: 30px;
+    margin: 0 50px 40px;
 }
 
-.sec-text li span 
-{
-    position: relative;
-
-}
-
-.sec-text li span::before
-{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 400px;
-    height: 90px;
-    background: #ffffff;
-    border-left: 2px solid #0ef;
-    animation: typing 1.5s steps(11) infinite alternate; 
-}
-
-@keyframes typing
-{
-    100% {
-        left: 100%;
-        margin: 0 -35px 0 35px;
-    }
-}
-section img
-{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-
-}
-
-section div#stars
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('IMG_5892.JPG') repeat-x; /* Repeating the image horizontally */
-    z-index: 5; /* Behind other elements */
-    animation: stars 30s linear infinite;
-}
-@keyframes stars
-{
-    0% {
-        background-position: 0;
-    }
-    100% {
-        background-position: 100% 0;
-    }
-}
-
-section img#rock
-{
-    z-index: 10;
-}
-
-section img#rightc{
-    z-index: 15;
-    transform: translateX(150px);
-
-
-
-}
-section img#leftc {
-    z-index: 16;
-    transform: translateX(-250px);
-
-
-
-}
-#text
-{
-    position: absolute;
-    right: -40px;
-    color: #ffffff;
-    white-space: nowrap;
-    font-size: 7.5vw;
-    z-index: 9;
-    transform: translateY(100px);
-
-}
-#text2
-{
-    position: absolute;
-    right: -35px;
-    color: #ffffff;
-    white-space: nowrap;
-    font-size: 4vw;
-    z-index: 8;
-    transform: translateY(10px);
-}
-.sec
-{
-    position: relative;
-    padding: 100px;
-    background: #4E6A94;
-}
-.sec h2
-{
-    color: #e2f7ff;
-    font-size: 4vw;
-    margin-bottom: 10px;  
-}
-.sec p
-{
-    font-size: 1em;
-    color: #d8edff; 
+p:nth-of-type(2),
+p:nth-of-type(3) {
+    margin: 40px 50px;
 }
